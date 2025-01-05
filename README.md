@@ -1,7 +1,7 @@
 <h1 align="center"> Como usar o whatsapp-web.js? </h1>
 
 <p align="center">
-Este projeto é um chatbot interativo para WhatsApp, desenvolvido em JavaScript, que funciona como uma extensão para lojas virtuais e catálogos de produtos. Ele é projetado para facilitar o atendimento ao cliente, ajudar na navegação pelos produtos e até mesmo realizar pedidos diretamente na conversa.
+Este projeto é um chatbot interativo para WhatsApp, desenvolvido em JavaScript, que funciona como uma extensão para lojas virtuais e catálogos de produtos. Ele é projetado para facilitar o atendimento ao cliente, auxiliar na navegação pelos produtos e até mesmo realizar pedidos diretamente na conversa.
 </p>
 
 <p align="center">
@@ -30,16 +30,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Primeiramente, iniciamos um projeto com `npm init -y`, e depois instalamos as dependecias necessárias para o funcionamento do bot:
+Primeiramente, iniciamos um projeto com `npm init -y`, e depois instalamos as dependências necessárias para o funcionamento do bot:
 
-- `npm i whatsapp-web.js`:libera opções para funcionalidade do bot.
-- `npm i qrcode-terminal`: para fazermos a conexão com o whatsapp via qrcode no terminal.
+- `npm i whatsapp-web.js`: libera opções para funcionalidade do bot.
+- `npm i qrcode-terminal`:  para fazermos a conexão com o WhatsApp via QR code no terminal.
 
 Em seguida, criamos um arquivo _index.js_, nele iniciamos as importações e configurações, depois seguimos para as funções do bot:
 
 ## Importações e configurações
 
-Para iniciarmos, vamos importar o `qrcode-terminal` e importar o cliente do whatsapp-web.js, esse cliente é o responsável por mandar as mensagens pelo Whatsapp:
+Para iniciarmos, vamos importar o `qrcode-terminal` e importar o cliente do whatsapp-web.js, esse cliente é o responsável por mandar as mensagens pelo WhatsApp:
 
 ```js
 const qrcode = require("qrcode-terminal")
@@ -48,7 +48,7 @@ const { Client } = require("whatsapp-web.js")
 
 Com todas as importações feitas, podemos fazer configurações importantes para o bot. A principal e única configuração é conservar a autenticação do usuário. Como se fosse o "Lembre-se de mim" num formulário.
 
-Toda vez que o código for executado, as informações de acesso do Whatsapp do cliente será mantido numa pasta, e assim, não precisar se conectar no whatsapp toda vez que o código é executado:
+Toda vez que o código for executado, as informações de acesso do WhatsApp do cliente serão mantidas numa pasta, e assim, não precisarão se conectar no WhatsApp toda vez que o código é executado:
 
 ```js
 const { Client, LocalAuth } = require("whatsapp-web.js")
@@ -61,11 +61,11 @@ const client = new Client({
 })
 ```
 
-- `dataPath: "whatsapp-auth"`: esse é o nome da pasta onde será guardada as informações de acesso do cliente ao Whatsapp.
+- `dataPath: "whatsapp-auth"`: esse é o nome da pasta onde serão guardadas as informações de acesso do cliente ao WhatsApp.
 
 ## Funções do bot (Respostas)
 
-Se você já utilizou [express.js](https://expressjs.com/pt-br/), pode identificar uma certa semelhança. Agora, vamos iniciar no terminal a geração do qrcode para o usuário se conectar ao Whatsapp.
+Se você já utilizou [express.js](https://expressjs.com/pt-br/), pode identificar uma certa semelhança. Agora, vamos iniciar no terminal a geração do QR code para o usuário se conectar ao WhatsApp.
 
 ```js
 client.on("qr", (qr) => {
@@ -81,7 +81,7 @@ client.on("ready", () => {
 })
 ```
 
-Depois disso, partimos para respostas à menagens. O código verifica a mensagem de todos os contatos, e se algum mandar a especifica mensagem de "!ping" (ou qualquer coisa que possa ser), o bot responde "pong":
+Depois disso, partimos para respostas às menagens. O código verifica a mensagem de todos os contatos e, se algum mandar a específica mensagem de "!ping" (ou qualquer coisa que possa ser), o bot responde "pong":
 
 ```js
 client.on("message_create", (message) => {
