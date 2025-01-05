@@ -100,3 +100,7 @@ Essa foi a lógica utilizada para a criação do bot de loja virtual.
 - Acesse também meus outros repositórios no [Github](https://github.com/matheusfdosan?tab=repositories).
 
 - Também me siga no [Instagram](https://instagram.com/matheusfdosan).
+
+- Conecte-se comingo no [Linkedin](https://www.linkedin.com/in/matheusfaus/)
+
+- Contrate-me para o desenvolvimento de sistemas e soluções personalizadas no [99freelas](https://www.99freelas.com.br/user/matheusfdosan)
