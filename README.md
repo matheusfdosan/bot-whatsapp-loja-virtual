@@ -1,4 +1,34 @@
-# Como usar o whatsapp-web.js
+<h1 align="center"> Como usar o whatsapp-web.js? </h1>
+
+<p align="center">
+Este projeto é um chatbot interativo para WhatsApp, desenvolvido em JavaScript, que funciona como uma extensão para lojas virtuais e catálogos de produtos. Ele é projetado para facilitar o atendimento ao cliente, ajudar na navegação pelos produtos e até mesmo realizar pedidos diretamente na conversa.
+</p>
+
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-contato">Contato</a>
+</p>
+
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="bot-whatsapp-preview" src=".github/preview.png" width="100%" style='border-radius: 10px'>
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- JavaScript
+- Biblioteca **whatsapp-web.js** e **qrcode-terminal**
+- Node.js
+
+## 💻 Projeto
 
 Primeiramente, iniciamos um projeto com `npm init -y`, e depois instalamos as dependecias necessárias para o funcionamento do bot:
 
@@ -64,3 +94,9 @@ client.on("message_create", (message) => {
 > E por fim, sempre coloque `client.initialize()` no final do código. Sempre na última linha.
 
 Essa foi a lógica utilizada para a criação do bot de loja virtual.
+
+## Contato
+
+- Acesse também meus outros repositórios no [Github](https://github.com/matheusfdosan?tab=repositories).
+
+- Também me siga no [Instagram](https://instagram.com/matheusfdosan).
